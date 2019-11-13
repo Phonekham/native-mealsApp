@@ -42,11 +42,7 @@ const CategoriesScreen = props => {
 };
 
 CategoriesScreen.navigationOptions = {
-  headerTitle: "Meal Category",
-  headerStyle: {
-    backgroundColor: Color.primaryColor
-  },
-  headerTintColor: "white"
+  headerTitle: "Meal Category"
 };
 
 const styles = StyleSheet.create({
