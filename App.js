@@ -1,15 +1,14 @@
 import React, { useState } from "react";
-import { StyleSheet, Text, View } from "react-native";
 import * as Font from "expo-font";
 import { AppLoading } from "expo";
-import { useScreens } from "react-native-screens";
+import { enableScreens } from "react-native-screens";
 import { createStore, combineReducers } from "redux";
 import { Provider } from "react-redux";
 
 import MealNavigator from "./navigation/MealsNavigator";
 import mealsReducer from "./store/reducers/meals";
 
-useScreens();
+enableScreens();
 
 const rootReducer = combineReducers({
   meals: mealsReducer
